@@ -33,16 +33,16 @@
     </section>
     <section id="formulaire" class="formulaire">
         <h2 class="new-project-title">Ajouter un projet à mon portofolio</h2>
-        <form id="new-project-form" class="new-project-form" onsubmit="submit(event)">
+        <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
             <div class="div1">
                 <label for="project-title">Titre du projet</label>
-                <input type="text" name="project-title" id="project-title"></div>
+                <input type="text" name="project-title" id="project-title" required="required"></div>
             <div class="div1">
                 <label for="project-img">Lien vers une image en ligne</label>
-                <input type="text" name="project-img" id="project-img"></div>
+                <input type="text" name="project-img" id="project-img" required="required"></div>
             <div class="textarea1">
                 <label for="project-text">Description du propjet</label>
-                <textarea name="project-text" id="project-text"></textarea>
+                <textarea name="project-text" id="project-text" required="required"></textarea>
 
             </div>
             <button type="submit">Créer le nouveau projet</button>

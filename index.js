@@ -3,12 +3,12 @@ const createNewCard = (title, image, text) => {
     newCard.classList.add("blok-card")
 
     const cardTitle = document.createElement("h2")
-    cardTitle.classlist.add("card-title")
+    cardTitle.classList.add("card-title")
     cardTitle.innerText = title
     newCard.appendChild(cardTitle)
 
     const cardImg = document.createElement("img")
-    cardImg.classlist.add("card-img")
+    cardImg.classList.add("card-img")
     cardImg.src = image
     newCard.appendChild(cardImg)
 
@@ -21,12 +21,13 @@ const createNewCard = (title, image, text) => {
 }
 
 const reset = () => {
-    document.querySelector("#project-title").value = "lol"
+    document.querySelector("#project-title").value = ""
     document.querySelector("#project-img").value = ""
     document.querySelector("#project-text").value = ""
 
 }
-const submit = (event) => {
+
+const handleSubmit = (event) => {
     event.preventDefault()
     const projectTitle = document.querySelector("#project-title").value
     const projectImg = document.querySelector("#project-img").value
@@ -34,6 +35,7 @@ const submit = (event) => {
     const newProjectCard = createNewCard(projectTitle, projectImg, projectText)
     document.querySelector("#container-projets").appendChild(newProjectCard)
     reset()
+
 
 
 }
