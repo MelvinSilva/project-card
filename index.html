@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="projet" class="projet">
+        <h1 class="title-projet">Mes projets</h1>
+        <section class="container-projets" id="container-projets">
+            <div class="blok-card">
+                <h2 class="card-title">Mon premier projet JavaScript</h2>
+                <img class="card-img" src="image/javascript.jpeg">
+                <p class="card-paragraphe">Ce projet JavaScript est un site portofolio de tous mes projets sous forme de cartes</p>
+            </div>
+            <div class="blok-card">
+                <h2>Mon premier projet React</h2>
+                <img src="image/react.jpeg">
+                <p>Ce projet React est un site de recettes connecté et communautaire</p>
+            </div>
+            <div class="blok-card">
+                <h2>Mon premier projet Node</h2>
+                <img src="image/node.jpeg">
+                <p>Ce projet Node est un mini réseau social connecté à MongoDB</p>
+            </div>
+
+        </section>
+
+    </section>
+    <section id="formulaire" class="formulaire">
+        <h2 class="new-project-title">Ajouter un projet à mon portofolio</h2>
+        <form id="new-project-form" class="new-project-form" onsubmit="submit(event)">
+            <div class="div1">
+                <label for="project-title">Titre du projet</label>
+                <input type="text" name="project-title" id="project-title"></div>
+            <div class="div1">
+                <label for="project-img">Lien vers une image en ligne</label>
+                <input type="text" name="project-img" id="project-img"></div>
+            <div class="textarea1">
+                <label for="project-text">Description du propjet</label>
+                <textarea name="project-text" id="project-text"></textarea>
+
+            </div>
+            <button type="submit">Créer le nouveau projet</button>
+
+
+
+        </form>
+
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

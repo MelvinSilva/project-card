@@ -1,0 +1,63 @@
+body {
+    background: rgb(247, 247, 247)
+}
+
+h1 {
+    text-align: center;
+}
+
+.container-projets {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blok-card {
+    width: 30%;
+    background-color: white;
+    border: 2px solid rgb(240, 118, 109);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 4px rgb(53, 115, 136);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.formulaire {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(247, 141, 133);
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.textarea1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    border: none;
+}
